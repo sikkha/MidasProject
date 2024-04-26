@@ -53,10 +53,10 @@ python app.py &
 Alternatively, to keep the server running in the background persistently, especially after closing the terminal, you can use screen or a similar tool:
 
 ```
-screen -dmS midas_frontend python app.py
+screen 
+python app.py
 ```
-
-This command starts app.py in a detached screen session named midas_frontend.
+and use ctrl-a, d to exit from the current screen. This command starts app.py in a detached screen session named midas_frontend.
 
 
 ## Contributing
