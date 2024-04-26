@@ -1,2 +1,6 @@
 google.generativeai
 llm_handler
+flask_sqlalchemy
+flasklogin
+yfinance
+plotly
