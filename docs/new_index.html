@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="description" content="Geopolitics.Λsia Trend Radar: a tool to visualize trend monitoring, inspired by Tech Radar from Zalando to pick the best technologies for new projects">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Geopolitics.Asia Trend  Radar</title>
+<link rel="shortcut icon" href="https://www.geopolitics.asia/favicon.ico">
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="radar.js"></script>
+
+<link rel="stylesheet" href="radar.css">
+</head>
+
+<body>
+
+<img src="Geopoliticsasialogo.png" alt="Geopolitics.asia" style="max-width: 20%;">
+
+<svg id="radar"></svg>
+
+<script>
+radar_visualization({
+  svg_id: "radar",
+  width: 1450,
+  height: 1000,
+  colors: {
+    background: "#fff",
+    grid: '#dddde0',
+    inactive: "#ddd"
+  },
+  title: "Geopolitics.Λsia Trend Radar",
+date: "26/04/2024: 14:19",
+
+
+  quadrants: [
+    { name: "Societal and Cultural"},
+    { name: "Innovation and Law" },
+    { name: "Politics/Security" },
+    { name: "Economics" },
+  ],
+  rings: [
+    { name: "ENGAGE", color: "#5ba300" },
+    { name: "MONITOR", color: "#009eb0" },
+    { name: "OBSERVE", color: "#c7ba00" },
+    { name: "ACKNOWLEDGE", color: "#e09b96" }
+  ],
+  print_layout: true,
+  links_in_new_tabs: true,
+  // zoomed_quadrant: 0,
+  //ENTRIES
+  entries: [
+      {"quadrant": 3, "ring": 1, "label": " China shipbuilding strategy dominance.", "link": " https://t.co/MRx7BTwCIO", "active": true, "moved": 0},
+      {"quadrant": 2, "ring": 1, "label": " Global news highlights.", "link": " https://t.co/ryJKjXdDzX", "active": true, "moved": 0},
+      {"quadrant": 2, "ring": 1, "label": " Iran-Israel conflict analysis.", "link": " https://t.co/Rq9AZCsLvi", "active": true, "moved": 0},
+      {"quadrant": 2, "ring": 1, "label": " Iranian drone interception situation.", "link": " https://t.co/clsKlsV167", "active": true, "moved": 0},
+      {"quadrant": 1, "ring": 2, "label": " Memory formation breakthrough.", "link": " https://t.co/LXzpRB4x1a", "active": true, "moved": 0},
+      {"quadrant": 2, "ring": 1, "label": " Tanzania displacing Maasai.", "link": " https://t.co/b3nM4CZuyC", "active": true, "moved": 0},
+      {"quadrant": 3, "ring": 2, "label": " Conservationists' water management project.", "link": " https://t.co/f8dqZPrc2r", "active": true, "moved": 0},
+      {"quadrant": 1, "ring": 3, "label": " DNA sequencing benefits summarized.", "link": " https://t.co/LpNO1K0je9", "active": true, "moved": 0},
+      {"quadrant": 2, "ring": 3, "label": " California primary analysis.", "link": " https://t.co/HC2CW3IYUf", "active": true, "moved": 0},
+      {"quadrant": 1, "ring": 1, "label": " Deepfake creation regulation urgency", "link": " https://t.co/U6a52tLHbq", "active": true, "moved": 0},
+      {"quadrant": 2, "ring": 2, "label": " Trump reaching out.", "link": " https://t.co/Oke30Mo79n", "active": true, "moved": 0},
+    {
+        "quadrant": 3,
+        "ring": 1,
+        "label": "RabbitMQ",
+        "link": "https://engineering.zalando.com/tags/rabbitmq.html",
+        "active": true,
+        "moved": 0
+      }
+
+]
+  //ENTRIES
+});
+
+</script>
+
+<table>
+<tr>
+<td>
+</td></tr>
+</table>
+
+</body>
+</html>
+

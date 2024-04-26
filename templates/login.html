@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-2/3 max-w-4xl bg-white rounded-2xl shadow-2xl flex">
+        <div class="w-3/5 p-5">
+            <div class="text-left font-bold">
+                <span class="text-blue-600">Midas Project</span> / by Datasynth|AITensibility
+            </div>
+            <div class="py-10">
+                <h2 class="text-3xl font-bold text-blue-600 text-center mb-2">Sign in to Account</h2>
+                <div class="border-2 w-10 border-blue-600 mx-auto mb-2"></div>
+                
+                <!-- Social Icons -->
+                <div class="flex justify-center my-2">
+                    <a href="#" class="border-2 border-gray-200 rounded-full p-3 mx-1">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="border-2 border-gray-200 rounded-full p-3 mx-1">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="border-2 border-gray-200 rounded-full p-3 mx-1">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+
+                <p class="text-gray-400 text-center my-3">or use your email account</p>
+                
+                <!-- Email and Password Input -->
+                <form method="POST" class="flex flex-col items-center">
+                    <div class="bg-gray-100 w-64 p-2 flex items-center mb-3"> 
+                        <i class="fas fa-envelope text-gray-400 mr-2"></i>
+                        <input type="email" name="email" placeholder="Email" class="bg-gray-100 outline-none text-sm flex-1">
+                    </div>
+                    <div class="bg-gray-100 w-64 p-2 flex items-center mb-3"> 
+                        <i class="fas fa-lock text-gray-400 mr-2"></i>
+                        <input type="password" name="password" placeholder="Password" class="bg-gray-100 outline-none text-sm flex-1">
+                    </div>
+                    <div class="flex w-64 justify-between mb-5">
+                        <label class="flex items-center text-xs">
+                            <input type="checkbox" name="remember" class="mr-1">
+                            Remember me
+                        </label>
+                        <a href="#" class="text-xs">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                        Sign In
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="w-2/5 bg-blue-600 text-white text-center py-36 px-12 rounded-tr-2xl rounded-br-2xl">
+            <h2 class="text-3xl font-bold mb-2">Hello, Friend!</h2>
+            <div class="border-2 w-10 border-white inline-block mb-2"></div>
+            <p class="mb-10">Fill up personal information and start journey with us.</p>
+            <a href="#" class="border-2 border-white rounded-full px-12 py-2 font-semibold">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>
+
